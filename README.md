@@ -10,7 +10,8 @@ Editor Text:
 Webserver:
 - XAMPP
 
-LOGIN ADMIN
+
+                                                                      LOGIN ADMIN
 
 ![image](https://user-images.githubusercontent.com/88584119/219100352-257337e2-52f2-45c7-95b7-7cee60cfe6d1.png)
 
