@@ -1,0 +1,90 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #d0d0;
+}
+header {
+    background-color:steelblue;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left:5px;
+}
+.bt {
+    margin-left:5px;
+    float: center;
+    text-align: center;
+}
+.bttambah {
+    margin-bottom:5px;
+    margin-left:5px;
+    float: right;
+    text-align: center;
+}
+
+.myTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align:left;
+}
+.myTable td, .myTable th {
+    border:  1px solid #ddd;
+    padding: 10px;
+}
+.myTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.myTable tr:hover {
+    background-color: #ddd;
+}
+.myTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+.myinput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.myinputLogin {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 5px;
+    box-sizing: border-box;
+  }
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background-color:#ddd;
+    color: #111;
+    font-weight:bold;
+    font-style: italic;
+    text-align: center;  
+}

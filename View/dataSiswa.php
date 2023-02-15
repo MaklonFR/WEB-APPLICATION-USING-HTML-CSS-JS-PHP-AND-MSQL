@@ -31,8 +31,8 @@
                 <td>". $row["jurusan"]."</td>
                 <td>". $row["alamat"]."</td>
                 <td>
-                <button style='font-size: 14px; background-color:#4CAF50;' class='button' id='lihatSiswa' >Lihat</button>
-                <button style='font-size: 14px; background-color:red;' class='button' id='hapusSiswa' >Hapus</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='button' id='lihatSiswa' >Lihat</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='button' id='hapusSiswa' >Hapus</button>
                 </td>
             </tr>";   
             }
@@ -41,4 +41,57 @@
             echo "0 results";
             }
         ?>
-        
+
+<script>
+  $("#tambahSiswa").click(function(){
+    $.ajax({
+      url: "formSiswa/tambahSiswa.php",
+      data: {},
+      beforeSend:function()
+          {
+            $('#judul').html("<span style='color:steelblue'>Loading...</span>");
+          },
+      success: function(data)
+          {   
+            window.setTimeout(function() {   
+                $("#tampil_hasil").html(data);
+            }, 1000); 
+          }
+       });
+  });
+
+  $(document).on('click', '#lihatSiswa', function(e){
+    var id = $(this).data('id');
+    //alert(id);
+    $.ajax({
+      method: "POST",
+      url: "formSiswa/ubahSiswa.php",
+      data: {idSiswa : id},
+      beforeSend:function()
+          {
+            $('#judul').html("<span style='color:steelblue'>Loading...</span>");
+          },
+      success: function(data)
+          {   
+            window.setTimeout(function() {   
+                $("#tampil_hasil").html(data);
+            }, 1000); 
+          }
+       });
+  });
+
+  $(document).on('click', '#hapusSiswa', function(e){
+    var id = $(this).data('id');
+    $.ajax({
+      method  :"POST",
+      url     : "formSiswa/deleteSiswa.php",
+      data    : {idSiswa : id},
+      success: function(data)
+          {   
+            alert(data)
+            tampilSiswa();       
+          }
+       });
+  });
+
+</script>

@@ -1,10 +1,10 @@
 <?php
     //print_r($_POST);
     include "../koneksi.php";//panggil file koneksi database (koneksi.php)
-    $idguru   = $_POST['idGuru'];
-    $sql = "DELETE FROM tb_guru WHERE id = $idguru";
+    $idsiswa   = $_POST['idSiswa'];
+    $sql = "DELETE FROM tb_siswa WHERE id = $idsiswa";
     if ($conn->query($sql) === TRUE) {
-        echo "Data guru berhasil dihapus..!";
+        echo "Data siswa berhasil dihapus..!";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
