@@ -5,7 +5,7 @@ Persiapan Ujian Kompetensi Keashlian (UKK) 2023 Rekayasa Perangkat Lunak SMKN 1 
 Membuat Aplikasi Web Admin (CRUD) menggunakan HTML, CSS, JAVASCRIPT, PHP dan MYSQL
 
 Editor Text:
-- Visual Studi Code
+- Visual Studio Code (VSCode)
 
 Webserver:
 - XAMPP
