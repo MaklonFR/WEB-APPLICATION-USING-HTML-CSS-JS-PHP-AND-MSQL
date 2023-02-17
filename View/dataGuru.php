@@ -1,6 +1,6 @@
 <h3 id="judul"> Daftar Nama Guru SMKN 1 Kuwus </h3>
     <button style='font-size: 14px; background-color:steelblue;' class="bttambah button" id='tambahGuru' >Tambah</button>
-        <table class="myTable">
+      <table class="myTable">
             <!--Bagian Kop Tabel-->
             <tr>
                 <th>No</th>
@@ -27,8 +27,8 @@
                 <td>". $row["mapel"]."</td>
                 <td>". $row["alamat"]."</td>
                 <td>
-                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='button' id='lihatGuru' >Lihat</button>
-                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='button' id='hapusGuru' >Hapus</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='btnTable' id='lihatGuru' >Lihat</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='btnTable' id='hapusGuru' >Hapus</button>
                 </td>
             </tr>";   
             }

@@ -21,8 +21,8 @@
                 <td>". $row["nama_jurusan"]."</td>
                 <td>". $row["jumlah_kelas"]."</td>
                 <td>
-                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='button' id='lihatJur' >Lihat</button>
-                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='button' id='hapusJur' >Hapus</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='btnTable' id='lihatJur' >Lihat</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='btnTable' id='hapusJur' >Hapus</button>
                 </td>
             </tr>";   
             }

@@ -20,6 +20,15 @@ header {
     cursor: pointer;
     margin-left:5px;
 }
+
+.btnTable {
+    cursor: pointer;
+    border:none;
+    padding: 6px 12px;
+    color: white;
+    text-align: center;
+}
+
 .bt {
     margin-left:5px;
     float: center;
@@ -37,7 +46,9 @@ header {
     border-collapse: collapse;
     width: 100%;
     text-align:left;
+    cursor: auto;
 }
+
 .myTable td, .myTable th {
     border:  1px solid #ddd;
     padding: 10px;

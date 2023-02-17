@@ -31,8 +31,8 @@
                 <td>". $row["jurusan"]."</td>
                 <td>". $row["alamat"]."</td>
                 <td>
-                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='button' id='lihatSiswa' >Lihat</button>
-                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='button' id='hapusSiswa' >Hapus</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:#4CAF50;' class='btnTable' id='lihatSiswa' >Lihat</button>
+                <button data-id=".$row["id"]." style='font-size: 14px; background-color:red;' class='btnTable' id='hapusSiswa' >Hapus</button>
                 </td>
             </tr>";   
             }
